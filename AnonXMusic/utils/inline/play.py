@@ -33,32 +33,32 @@ def stream_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 10:
-        bar = "◉—————————"
-    elif 10 < umm < 20:
-        bar = "—◉————————"
-    elif 20 <= umm < 30:
-        bar = "——◉———————"
-    elif 30 <= umm < 40:
-        bar = "———◉——————"
-    elif 40 <= umm < 50:
-        bar = "————◉—————"
-    elif 50 <= umm < 60:
-        bar = "—————◉————"
-    elif 60 <= umm < 70:
-        bar = "——————◉———"
-    elif 70 <= umm < 80:
-        bar = "———————◉——"
-    elif 80 <= umm < 95:
-        bar = "————————◉—"
+        bar = "╦╤─-ㅤㅤㅤㅤㅤ ㅤㅤㅤ 웃"
+    elif 10 < InsaneMusic < 20:
+        bar = "╦╤─--ㅤㅤㅤㅤㅤㅤㅤㅤ 웃"
+    elif 20 <= InsaneMusic < 30:
+        bar = "╦╤─---ㅤㅤㅤㅤ ㅤㅤㅤ 웃"
+    elif 30 <= InsaneMusic < 40:
+        bar = "╦╤─----ㅤㅤㅤㅤㅤㅤㅤ 웃"
+    elif 40 <= InsaneMusic < 50:
+        bar = "╦╤─-----ㅤㅤㅤ ㅤㅤㅤ 웃"
+    elif 50 <= InsaneMusic < 60:
+        bar = "╦╤─------ㅤㅤㅤㅤㅤㅤ 웃"
+    elif 60 <= InsaneMusic < 70:
+        bar = "╦╤─-------ㅤㅤ ㅤㅤㅤ 웃"
+    elif 70 <= InsaneMusic < 80:
+        bar = "╦╤─--------ㅤㅤㅤㅤㅤ 웃"
+    elif 80 <= InsaneMusic < 95:
+        bar = "╦╤─---------ㅤ ㅤㅤㅤ 웃"
     else:
-        bar = "—————————◉"
+        bar = "╦╤─----------ꐕ↠ⁿᵉˣᵗ ˢᵒⁿᵍ "
     buttons = [
         [
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="❦", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
             InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="‣☞", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="≛", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
@@ -66,7 +66,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 callback_data="GetTimer",
             )
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(text=_["ɴᴏɪ ɴᴏɪ - 𝐓𝐇𝐀𝐕𝐀𝐑𝐀𝐍𝐀 𝐒𝐞𝐲𝐚𝐥"], callback_data="close")],
     ]
     return buttons
 
@@ -74,11 +74,11 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="❦", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
             InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="☞", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="☞", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
@@ -148,7 +148,7 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
                 callback_data=f"forceclose {query}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="▷",
+                text="❦",
                 callback_data=f"slider F|{query_type}|{query}|{user_id}|{channel}|{fplay}",
             ),
         ],
