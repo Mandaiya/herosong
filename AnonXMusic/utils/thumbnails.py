@@ -11,7 +11,7 @@ import PIL
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import YOUTUBE_IMG_URL
-from AnonXMisic import app
+from AnonXMusic import app
 
 
 def changeImageSize(maxWidth, maxHeight, image):
