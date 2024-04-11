@@ -7,19 +7,19 @@ def botplaylist_markup(_):
     buttons = [
         [
             InlineKeyboardButton(text=_["S_B_9"], url=SUPPORT_CHAT),
-            InlineKeyboardButton(text=_["ɴᴏɪ ɴᴏɪ_BUTTON"], callback_data="ɴᴏɪ ɴᴏɪ"),
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="NOI NOI"),
         ],
     ]
     return buttons
 
 
-def ɴᴏɪ ɴᴏɪ_markup(_):
+def CLOSE_markup(_):
     upl = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    text=_["ɴᴏɪ ɴᴏɪ - 𝐓𝐇𝐀𝐕𝐀𝐑𝐀𝐍𝐀 𝐒𝐞𝐲𝐚𝐥"],
-                    callback_data="ɴᴏɪ ɴᴏɪ",
+                    text=_["𝐓𝐇𝐀𝐕𝐀𝐑𝐀𝐍𝐀 𝐒𝐞𝐲𝐚𝐥"],
+                    callback_data="NOI NOI",
                 ),
             ]
         ]
