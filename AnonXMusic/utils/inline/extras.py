@@ -13,13 +13,13 @@ def botplaylist_markup(_):
     return buttons
 
 
-def CLOSE_markup(_):
+def close_markup(_):
     upl = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    text=_["𝐓𝐇𝐀𝐕𝐀𝐑𝐀𝐍𝐀 𝐒𝐞𝐲𝐚𝐥"],
-                    callback_data="NOI NOI",
+                    text=_["CLOSE_BUTTON"],
+                    callback_data="close",
                 ),
             ]
         ]
