@@ -33,9 +33,9 @@ def add_corners(im):
     im.putalpha(mask)
 
 
-async def gen_thumb(videoid, user_id):
+async def gen_thumb(videoid):
     if os.path.isfile(f"cache/{videoid}_{user_id}.png"):
-        return f"cache/{videoid}_{user_id}.png"
+        return f"cache/{videoid}.png"
     url = f"https://www.youtube.com/watch?v={videoid}"
     try:
         results = VideosSearch(url, limit=1)
