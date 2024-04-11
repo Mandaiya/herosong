@@ -19,7 +19,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
+                text=_["ɴᴏɪ ɴᴏɪ - 𝐓𝐇𝐀𝐕𝐀𝐑𝐀𝐍𝐀 𝐒𝐞𝐲𝐚𝐥"],
                 callback_data=f"forceclose {videoid}|{user_id}",
             )
         ],
@@ -31,24 +31,24 @@ def stream_markup_timer(_, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
-    umm = math.floor(percentage)
-    if 0 < umm <= 10:
+    AnonXMusic = math.floor(percentage)
+    if 0 < AnonXMusic <= 10:
         bar = "╦╤─-ㅤㅤㅤㅤㅤ ㅤㅤㅤ 웃"
-    elif 10 < InsaneMusic < 20:
+    elif 10 < AnonXMusic < 20:
         bar = "╦╤─--ㅤㅤㅤㅤㅤㅤㅤㅤ 웃"
-    elif 20 <= InsaneMusic < 30:
+    elif 20 <= AnonXMusic < 30:
         bar = "╦╤─---ㅤㅤㅤㅤ ㅤㅤㅤ 웃"
-    elif 30 <= InsaneMusic < 40:
+    elif 30 <= AnonXMusic < 40:
         bar = "╦╤─----ㅤㅤㅤㅤㅤㅤㅤ 웃"
-    elif 40 <= InsaneMusic < 50:
+    elif 40 <= AnonXMusic < 50:
         bar = "╦╤─-----ㅤㅤㅤ ㅤㅤㅤ 웃"
-    elif 50 <= InsaneMusic < 60:
+    elif 50 <= AnonXMusic < 60:
         bar = "╦╤─------ㅤㅤㅤㅤㅤㅤ 웃"
-    elif 60 <= InsaneMusic < 70:
+    elif 60 <= AnonXMusic < 70:
         bar = "╦╤─-------ㅤㅤ ㅤㅤㅤ 웃"
-    elif 70 <= InsaneMusic < 80:
+    elif 70 <= AnonXMusic < 80:
         bar = "╦╤─--------ㅤㅤㅤㅤㅤ 웃"
-    elif 80 <= InsaneMusic < 95:
+    elif 80 <= AnonXMusic < 95:
         bar = "╦╤─---------ㅤ ㅤㅤㅤ 웃"
     else:
         bar = "╦╤─----------ꐕ↠ⁿᵉˣᵗ ˢᵒⁿᵍ "
@@ -80,7 +80,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="☞", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="☞", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(text=_["ɴᴏɪ ɴᴏɪ - 𝐓𝐇𝐀𝐕𝐀𝐑𝐀𝐍𝐀 𝐒𝐞𝐲𝐚𝐥"], callback_data="close")],
     ]
     return buttons
 
@@ -99,7 +99,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
+                text=_["ɴᴏɪ ɴᴏɪ - 𝐓𝐇𝐀𝐕𝐀𝐑𝐀𝐍𝐀 𝐒𝐞𝐲𝐚𝐥"],
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
         ],
@@ -117,7 +117,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
+                text=_["ɴᴏɪ ɴᴏɪ - 𝐓𝐇𝐀𝐕𝐀𝐑𝐀𝐍𝐀 𝐒𝐞𝐲𝐚𝐥"],
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
         ],
@@ -144,7 +144,7 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
                 callback_data=f"slider B|{query_type}|{query}|{user_id}|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
+                text=_["ɴᴏɪ ɴᴏɪ - 𝐓𝐇𝐀𝐕𝐀𝐑𝐀𝐍𝐀 𝐒𝐞𝐲𝐚𝐥"],
                 callback_data=f"forceclose {query}|{user_id}",
             ),
             InlineKeyboardButton(
